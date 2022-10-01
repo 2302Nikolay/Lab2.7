@@ -5,5 +5,10 @@ if __name__ == '__main__':
     str_in = input("Введите строку: ").lower()
     a = set(str_in)
     u = set("aeiouyаоуыэеёиюяи")
-    gl = a.intersection(u)
-    print("Количество гласных букв в строке: ", len(gl))
+
+    count = 0
+    for i in str_in:
+        if i in u:
+            count = count+1
+
+    print(count)
