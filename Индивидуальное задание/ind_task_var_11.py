@@ -4,9 +4,18 @@
 if __name__ == '__main__':
 
     # Множества
+    u = set("abcdefghiklmnopqrstuvwxyz")
     a = set("abhkor")
     b = set("bghls")
     c = set("klz")
     d = set("gjpquv")
 
+    # Решение задачи
+    x = (a.intersection(c)).union(b)
+    na = u.difference(a)
+    nb = u.difference(b)
+    y = (na.intersection(b)).difference(c.union(d))
 
+    # Вывод результата
+    print("X = ", x)
+    print("Y = ", y)
