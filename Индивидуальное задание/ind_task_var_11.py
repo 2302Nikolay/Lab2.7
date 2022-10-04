@@ -11,11 +11,17 @@ if __name__ == '__main__':
     d = set("gjpquv")
 
     # Решение задачи
+    x = (a & c) or b
+    na = u - a
+    nb = u - b
+    y = (na & b) - (c or d)
+
+    """""
     x = (a.intersection(c)).union(b)
     na = u.difference(a)
     nb = u.difference(b)
     y = (na.intersection(b)).difference(c.union(d))
-
+    """""
     # Вывод результата
     print("X = ", x)
     print("Y = ", y)
