@@ -11,10 +11,10 @@ if __name__ == '__main__':
     d = set("gjpquv")
 
     # Решение задачи
-    x = (a & c) or b
+    x = (a & c) | b
     na = u - a
     nb = u - b
-    y = (na & b) - (c or d)
+    y = (na & b) - (c | d)
 
     """""
     x = (a.intersection(c)).union(b)
